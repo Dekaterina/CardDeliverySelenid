@@ -19,7 +19,7 @@ public class CardDeliverySelenidTest {
     void shouldCheckPositiveCase() {
 
         open("http://localhost:9999");
-        $("[data-test-id=city] input").setValue("Воронеж");
+        $("[data-test-id=city] input").setValue("Москва");
         $("[data-test-id=date] input").doubleClick();
         $("[data-test-id=date] input").sendKeys(BACK_SPACE);
         String newDate = setDate(5, "dd.MM.yyyy");
